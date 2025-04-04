@@ -7,10 +7,10 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900 text-center">X3 Homes</h1>
         <Image
           className="rounded-lg shadow-md"
-          src="/real-estate-banner.jpg"
+          src="/luxury-home.jpg"
           alt="Luxury Home"
-          width={300}
-          height={200}
+          width={600}
+          height={400}
           priority
         />
         <p className="text-lg text-gray-600 text-center max-w-lg">
