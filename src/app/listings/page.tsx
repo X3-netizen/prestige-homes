@@ -33,6 +33,111 @@ const Listings: React.FC = () => {
       price: '$45,000',
       image: '/properties/house3.jpg',
     },
+    {
+      id: 1,
+      title: 'Modern 3-Bedroom Apartment',
+      location: 'East Legon, Accra',
+      price: '$120,000',
+      image: '/properties/house1.jpg',
+    },
+    {
+      id: 2,
+      title: 'Luxury Villa with Pool',
+      location: 'Cantonments, Accra',
+      price: '$850,000',
+      image: '/properties/house2.jpg',
+    },
+    {
+      id: 3,
+      title: 'Affordable 2-Bedroom Flat',
+      location: 'Kasoa, Central Region',
+      price: '$45,000',
+      image: '/properties/house3.jpg',
+    },
+    {
+      id: 1,
+      title: 'Modern 3-Bedroom Apartment',
+      location: 'East Legon, Accra',
+      price: '$120,000',
+      image: '/properties/house1.jpg',
+    },
+    {
+      id: 2,
+      title: 'Luxury Villa with Pool',
+      location: 'Cantonments, Accra',
+      price: '$850,000',
+      image: '/properties/house2.jpg',
+    },
+    {
+      id: 3,
+      title: 'Affordable 2-Bedroom Flat',
+      location: 'Kasoa, Central Region',
+      price: '$45,000',
+      image: '/properties/house3.jpg',
+    },
+    {
+      id: 1,
+      title: 'Modern 3-Bedroom Apartment',
+      location: 'East Legon, Accra',
+      price: '$120,000',
+      image: '/properties/house1.jpg',
+    },
+    {
+      id: 2,
+      title: 'Luxury Villa with Pool',
+      location: 'Cantonments, Accra',
+      price: '$850,000',
+      image: '/properties/house2.jpg',
+    },
+    {
+      id: 3,
+      title: 'Affordable 2-Bedroom Flat',
+      location: 'Kasoa, Central Region',
+      price: '$45,000',
+      image: '/properties/house3.jpg',
+    },
+    {
+      id: 1,
+      title: 'Modern 3-Bedroom Apartment',
+      location: 'East Legon, Accra',
+      price: '$120,000',
+      image: '/properties/house1.jpg',
+    },
+    {
+      id: 2,
+      title: 'Luxury Villa with Pool',
+      location: 'Cantonments, Accra',
+      price: '$850,000',
+      image: '/properties/house2.jpg',
+    },
+    {
+      id: 3,
+      title: 'Affordable 2-Bedroom Flat',
+      location: 'Kasoa, Central Region',
+      price: '$45,000',
+      image: '/properties/house3.jpg',
+    },
+    {
+      id: 1,
+      title: 'Modern 3-Bedroom Apartment',
+      location: 'East Legon, Accra',
+      price: '$120,000',
+      image: '/properties/house1.jpg',
+    },
+    {
+      id: 2,
+      title: 'Luxury Villa with Pool',
+      location: 'Cantonments, Accra',
+      price: '$850,000',
+      image: '/properties/house2.jpg',
+    },
+    {
+      id: 3,
+      title: 'Affordable 2-Bedroom Flat',
+      location: 'Kasoa, Central Region',
+      price: '$45,000',
+      image: '/properties/house3.jpg',
+    },
   ];
 
   return (
@@ -48,11 +153,15 @@ const Listings: React.FC = () => {
               <p className="text-gray-600">{property.location}</p>
               <p className="text-blue-600 font-bold mt-2">{property.price}</p>
               <a
-                href={`/listings/${property.id}`}
-                className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-              >
-                View Details
-              </a>
+  href={`/listings/${property.id}`}
+  className="inline-block mt-4 px-6 py-2 border-2 border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-600 hover:text-white transition"
+>
+  View Details
+</a>
+
+
+
+
             </div>
           </div>
         ))}

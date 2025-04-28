@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";  // Import Link component for navigation
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,6 +40,9 @@ export default function RootLayout({
               </Link>
               <Link href="/listings" className="text-lg mx-4 hover:text-blue-200">
                 Browse Listings
+              </Link>
+              <Link href="/about" className="text-lg mx-4 hover:text-blue-200">
+                About Us
               </Link>
               <Link href="/contact" className="text-lg mx-4 hover:text-blue-200">
                 Contact Us

@@ -21,12 +21,8 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      // In a real app, this would be a POST to an API route
       console.log("Sending message:", formData);
-      
-      // Simulate delay
       await new Promise((res) => setTimeout(res, 2000));
-      
       setStatus("success");
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
@@ -36,60 +32,72 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 mt-10 bg-white shadow-md rounded-lg">
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">Contact Us</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input
-          className="w-full p-3 border rounded"
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          className="w-full p-3 border rounded"
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          className="w-full p-3 border rounded"
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-          value={formData.phone}
-          onChange={handleChange}
-        />
-        <textarea
-          className="w-full p-3 border rounded"
-          name="message"
-          rows={5}
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
+    <div className="min-h-screen flex items-center justify-center bg-white px-6 py-20">
+      <div className="w-full max-w-2xl bg-black text-white p-10 rounded-3xl shadow-2xl">
+        <h1 className="text-4xl font-bold mb-6 text-center tracking-wide">
+          Contact X3 Homes
+        </h1>
+        <p className="text-center text-gray-400 mb-10">
+          Experience the Difference. Reach out today.
+        </p>
 
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition"
-          disabled={status === "loading"}
-        >
-          {status === "loading" ? "Sending..." : "Send Message"}
-        </button>
-      </form>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <input
+            className="w-full p-4 bg-transparent border-b-2 border-gray-600 focus:border-gold outline-none transition"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            className="w-full p-4 bg-transparent border-b-2 border-gray-600 focus:border-gold outline-none transition"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            className="w-full p-4 bg-transparent border-b-2 border-gray-600 focus:border-gold outline-none transition"
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+          <textarea
+            className="w-full p-4 bg-transparent border-b-2 border-gray-600 focus:border-gold outline-none transition"
+            name="message"
+            rows={4}
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
 
-      {status === "success" && (
-        <p className="text-green-600 mt-4 text-center">Message sent successfully ✅</p>
-      )}
-      {status === "error" && (
-        <p className="text-red-600 mt-4 text-center">Something went wrong ❌</p>
-      )}
+          <button
+            type="submit"
+            className="w-full bg-gold text-black font-semibold py-4 rounded-xl hover:bg-yellow-400 transition"
+            disabled={status === "loading"}
+          >
+            {status === "loading" ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+
+        {status === "success" && (
+          <p className="text-green-400 mt-6 text-center font-medium">
+            Message sent successfully ✅
+          </p>
+        )}
+        {status === "error" && (
+          <p className="text-red-400 mt-6 text-center font-medium">
+            Something went wrong ❌
+          </p>
+        )}
+      </div>
     </div>
   );
 }
