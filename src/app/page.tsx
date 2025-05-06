@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const images = [
@@ -11,7 +12,6 @@ export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [year, setYear] = useState<number | null>(null);
-
 
   useEffect(() => {
     setYear(new Date().getFullYear());
@@ -66,24 +66,26 @@ export default function Home() {
         </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row mt-8">
-          <a
-            className="rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto flex items-center justify-center"
+          <Link
             href="/listings"
+            className="rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto flex items-center justify-center"
           >
             Browse Listings
-          </a>
-          <a
-            className="rounded-full border border-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px] flex items-center justify-center"
+          </Link>
+          <Link
             href="/contact"
+            className="rounded-full border border-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px] flex items-center justify-center"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </main>
 
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center text-gray-600">
-        {year && <p>&copy; {year} X3 Homes. All rights reserved.</p>}
-      </footer>
+        {year && <p>&copy; {year} Prestige Homes. All rights reserved.</p>
+        
+
+   } </footer>
     </div>
   );
 }
