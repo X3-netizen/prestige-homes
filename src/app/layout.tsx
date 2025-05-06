@@ -32,12 +32,12 @@ export default function RootLayout({
         <header className="bg-blue-600 p-4 text-white">
           <nav className="max-w-7xl mx-auto flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold">
-              X3 Homes
+              Prestige Homes
             </Link>
             <div>
-              <Link href="/" className="text-lg mx-4 hover:text-blue-200">
+              {/*<Link href="/" className="text-lg mx-4 hover:text-blue-200">
                 Home
-              </Link>
+              </Link>*/}
               <Link href="/listings" className="text-lg mx-4 hover:text-blue-200">
                 Browse Listings
               </Link>

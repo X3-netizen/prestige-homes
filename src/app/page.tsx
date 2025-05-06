@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="min-h-screen p-8 pb-20 grid grid-rows-[20px_1fr_20px] items-center justify-items-center sm:p-20 font-sans">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start w-full">
-        <h1 className="text-4xl font-bold text-gray-900 text-center">X3 Homes</h1>
+        <h1 className="text-4xl font-bold text-gray-900 text-center">Prestige Homes</h1>
 
         {/* Image Slider */}
         <div className="relative w-full max-w-full h-[300px] sm:h-[500px] rounded-lg overflow-hidden shadow-md mx-auto">
@@ -49,12 +49,12 @@ export default function Home() {
           <div className="mt-4 flex gap-4">
             <input
               type="number"
-              placeholder="Min Price"
+              placeholder="Min Rooms"
               className="p-3 rounded border border-gray-300 focus:outline-none focus:border-blue-600 w-1/2"
             />
             <input
               type="number"
-              placeholder="Max Price"
+              placeholder="Max Rooms"
               className="p-3 rounded border border-gray-300 focus:outline-none focus:border-blue-600 w-1/2"
             />
             <button

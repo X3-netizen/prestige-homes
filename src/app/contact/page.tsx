@@ -35,7 +35,7 @@ export default function Contact() {
     <div className="min-h-screen flex items-center justify-center bg-white px-6 py-20">
       <div className="w-full max-w-2xl bg-black text-white p-10 rounded-3xl shadow-2xl">
         <h1 className="text-4xl font-bold mb-6 text-center tracking-wide">
-          Contact X3 Homes
+          Contact Prestige Homes
         </h1>
         <p className="text-center text-gray-400 mb-10">
           Experience the Difference. Reach out today.
