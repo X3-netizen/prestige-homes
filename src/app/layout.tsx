@@ -13,10 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "X3 Homes",
-  description: "Find your dream home with ease.",
+// app/layout.tsx
+export const metadata = {
+  title: 'Prestige Homes',
+  description: 'Your dream home awaits.',
 };
+
 
 export default function RootLayout({
   children,
