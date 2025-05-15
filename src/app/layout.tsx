@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,12 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// app/layout.tsx
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Prestige Homes',
   description: 'Your dream home awaits.',
 };
-
 
 export default function RootLayout({
   children,
@@ -36,9 +35,6 @@ export default function RootLayout({
               Prestige Homes
             </Link>
             <div>
-              {/*<Link href="/" className="text-lg mx-4 hover:text-blue-200">
-                Home
-              </Link>*/}
               <Link href="/listings" className="text-lg mx-4 hover:text-blue-200">
                 Browse Listings
               </Link>
